@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>View Workermenu</title>
+</head>
+<body style="background-image: url('https://i.pinimg.com/originals/d5/56/fa/d556fae6c6ceea6b52ae95faf5ac43c0.jpg');background-repeat: no-repeat;background-attachment: fixed;background-size: cover">
+<style>
+		th
+		{
+			background-color:#c90a0a;
+			font-size: 25px;
+			color:#eb3434;
+		   border-radius: 100px 100px 100px;
+		   padding: 10;
+		    border-width: 100;
+		    font-weight: bold;
+		    width: 100;
+		    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRHrSXm8G4yb0QSooyX4qCYRHKepYwezIfrh44eAHM_W2nGdZQc');
+		
+		}
+
+     table 
+       {
+     border-radius: 10px 10px 10px;
+     background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTg9J6H7QHs5S4sQHE9zKGxHGfR2GWppGyCQaCyV6B_KU-KjVo9');
+ 
+ }
+	</style>
+<table align="center" width="1000" border="3" height="100" cellspacing="30">
+	
+<th onmouseover="Big1()" onmouseout="normal1()" id="Add" onclick="window.open('http://localhost/Dbs%20project/workers.html','_self')" style="cursor: pointer;">Add Workers<th/>
+<th onmouseover="Big2()" onmouseout="normal2()" id="View" onclick="window.open('http://localhost/Dbs%20project/viewworkerrecord.php','_self')" style="cursor: pointer;">View Workers<th/>
+<th onmouseover="Big3()" onmouseout="normal3()" id="Delete" onclick="window.open('http://localhost/Dbs%20project/Dworkers.html','_self')" style="cursor: pointer;">Delete Workers</th>
+
+
+
+</table>
+
+
+<script>
+	function Big1(x){
+		document.getElementById('Add').style.fontSize = "40px";
+	}
+
+	function normal1(x){
+		document.getElementById('Add').style.fontSize = "25px";
+	}
+
+function Big2(x){
+		document.getElementById('View').style.fontSize = "40px";
+	}
+
+	function normal2(x){
+		document.getElementById('View').style.fontSize = "25px";
+	}
+
+function Big3(x){
+		document.getElementById('Delete').style.fontSize = "40px";
+			}
+
+	function normal3(x){
+		document.getElementById('Delete').style.fontSize = "25px";
+	}
+</script>
+
+</body>
+</html>

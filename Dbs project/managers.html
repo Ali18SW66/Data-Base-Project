@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Mannager</title>
+
+	<style> 
+
+input[type=text],input[type=tel],input[type=number] {
+  width: 30%;
+  padding: 12px 20px;
+ border-radius: 15px 50px 30px 5px;
+  margin: 8px 0;
+  box-sizing: border-box;
+   border: 3px solid #555;
+}
+input[type=text]:focus,input[type=tel]:focus,input[type=number]:focus {
+  
+  background-color: #3CBC8D;
+  }
+
+input[type=number]{
+	width: 10%;
+	padding: 12px 20px;
+	 border-radius: 15px 50px 30px 5px;
+}
+
+input[type=number]:focus{
+	background-color: #3CBC8D;
+}
+body{
+	color: #b33c00;
+font-size: 17px;
+font:bold;
+
+}
+input[type=radio] {
+    border: 0px;
+    width: 5%;
+    height: 2em;
+}
+ input[type=submit], input[type=reset] {
+  background-color: darkblue;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+   border-radius: 15px 50px 30px 5px;
+}
+
+
+textarea {
+  width: 50%;
+  height: 150px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  resize: none;
+  border-radius: 15px 50px 30px 5px;
+ border: 3px solid #555;
+
+}
+textarea:focus
+{
+background-color: #3CBC8D;
+}
+</style>
+</head>
+<body style="background-image: url('https://i.pinimg.com/originals/d5/56/fa/d556fae6c6ceea6b52ae95faf5ac43c0.jpg');background-repeat: no-repeat;background-attachment: fixed;background-size: cover">
+
+<form action="Addmannager.php" method="post">
+<fieldset>
+<legend style="text-align: center"><h1>Enter Mannager Information</h1></legend>
+<label><b>Enter FirstName:</b> </label><br>
+ <input type="text" name="FirstName" placeholder="Your FirstName" autofocus=""><br><br>
+ <label><b>Enter LastName:</b> </label><br>
+ <input type="text" name="LastName" placeholder="Your LastName"><br><br>
+ <label><b>Enter Mannager Id:</b> </label><br>
+ <input type="text" name="MannagerId" placeholder="MannagerId"><br><br>
+ <label><b>Enter Cnic:</b> </label><br>
+ <input type="text" name="Cnic" placeholder="Your cnic n0:" required=""><br><br>
+ <label><b>Select Age:</b> </label><br>
+ <input type="number" name="Age"required="" min="18" max="45"><br><br>
+ <label><b>Select Gender:</b> </label><br>
+ <input type="radio" name="Gender"   value="m" id="male" >male
+ <input type="radio" name="Gender"  value="f" id="female" >female<br><br>
+ 
+ 
+ <!--<label><b>Select CityName:</b> </label><br>
+ <SELECT n>
+ 	<option value="Islamabad">Islamabad </option>
+ 	<option value="lahore">lahore    </option>
+ 	<option value="karachi">karachi   </option>
+ 	<option value="hyderabad">hyderabad </option>
+ 	<option value="larkana">larkana   </option>
+    <option value="sukhur">sukhur    </option>
+    <option value="Mirpurkhas">Mirpurkhas</option>
+    <option value="other">other.</option>
+ </SELECT>
+ <br><br>!-->
+
+<label><b>Select CityName:</b> </label><br>
+ <input type="text" name="CityName" placeholder="CityName"><br><br>
+ <label><b>Enter Address:</b></label><br>
+ <textarea rows="4" cols="40" placeholder="Enter Address" required="" name="Address"></textarea><br><br>
+ <label><b>Enter Contact N0:</b></label><br>
+ <input type="tel" name="Contact"  required="" placeholder="xxxx-xxx-xxxx" ><br><br>
+ 
+ <!--<input type="text" name="Location" placeholder="Location"><br><br>!-->
+ <input type="submit" value="ADD">          <input type="reset" value="CLEAR">  
+</fieldset>
+</form>
+</html>
